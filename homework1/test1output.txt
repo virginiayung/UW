@@ -1,0 +1,6 @@
+Code run by Virginia Yung
+Environment variable UWHPSC is /home/uwhpsc/uwhpsc
+Environment variable MYHPSC is /home/uwhpsc/yungv_uwhpsc
+Imported numpy ok
+Imported matplotlib ok
+Imported pylab ok
