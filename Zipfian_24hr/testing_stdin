@@ -1,0 +1,12 @@
+import sys, io
+string = "A line from the string as stdin IO \n This line wont be read"    # A line of text we'll use as stdin
+file = open('test.txt')   # A text file we'll use as stdin
+line = input()    # Input from stdin, hopefully keyboard in this case
+print(line)
+sys.stdin = io.StringIO(string)    # Assigning stdin a File-like object from the string
+line = input()    # Read a line from the stdin
+print(line)
+sys.stdin = file    # Assign stdin the file object, so it will read from it
+line = input()    # Read a line from file
+print(line)
+sys.stdin = sys.__stdin__    # Reset the stdin to its default value
